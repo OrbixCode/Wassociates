@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+body {
+    background-color: #E2E6EB;
+    font-family: 'Montserrat',
+        sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    color: #1B1C34;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.container {
+    max-width: 1320px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    height: 100%;
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    margin: 5% 0;
+}
+
+.meet-card-sec {
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(171.38deg, #dff7da 3.36%, #cdf5c4 95.69%);
+    box-shadow: 0px 0px 20px rgba(227, 235, 246, 0.3);
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+.meet-card-sec-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.meet-card-sec-body {
+    padding-top:20px;
+}
+
+.meet-card-sec-title {
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #25262C;
+    font-size: 32px;
+    padding-bottom: 15px;
+}
+
+.designation {
+    font-weight: 700;
+    font-size: 22px;
+    color: #959EAF;
+}
+
+.call_btn {
+    margin: 50px 0 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 99;
+}
+
+
+
+.btn_icon i {
+    position: relative;
+    font-size: 22px;
+    color: #44c256;
+    transition: all .3s ease-in-out;
+}
+
+.btn_icon i:after {
+    content: '';
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    background-color: white;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    left: -17px;
+    top: -18px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.circle {
+    position: absolute;
+    background: radial-gradient(45.14% 45.14% at 50% 50%,#98f5a7 0%, #b5f5bf 26.59%, #baf5c3 46.99%, #baf5c3 71.36%, #89f098 100%);
+    box-shadow: 0px 4px 107px #89f098;
+    border-radius: 50%;
+    left: -46px;
+    top: -46px;
+    height: 110px;
+    width: 110px;
+    display: block;
+    z-index: -2;
+    transition: all .3s ease-in-out;
+}
+
+.btn_icon:hover i {
+    color: #89f098;
+}
+
+
+.btn_icon:hover .circle {
+    box-shadow: 0px 4px 97px #44c256;
+}
+
+.link {
+    position: fixed;
+    background-color: #D12322;
+    padding: 23px 40px;
+    right: -110px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .1s ease-in-out;
+}
+
+.link i {
+    padding-left: 7px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .meet-card-sec {
+        padding: 12px;
+    }
+
+    .meet-card-sec-title {
+        font-size: 26px;
+    }
+
+    .designation {
+        font-size: 18px;
+    }
+
+    .call_btn {
+        margin-bottom:20%;
+    }
+}
+
+
+Resources

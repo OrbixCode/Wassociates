@@ -1,0 +1,75 @@
+.property-card-section {
+    background-color: #f5f8fd;
+}
+
+.property-container {
+    padding-top: 50px !important;
+}
+.carousel-wrap {
+    padding-top: 0px !important;
+}
+
+.property-item {
+    margin: 10px !important;
+}
+
+.card-area {
+    border-radius: 30px !important;
+}
+.card-area:hover {
+    box-shadow: 0 0 11px rgba(44, 44, 44, 0.4);
+}
+
+.card-area-img {
+    height: 200px !important;
+    border-top-right-radius: 30px !important;
+    border-top-left-radius: 30px !important;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .property-detail-sec{
+display:inline-flex;
+} */
+.property-details {
+    font-size: 12px;
+}
+.card-address {
+    font-size: 12px;
+}
+
+/* .carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+} */
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+.owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+}
+
+.owl-nav i {
+    font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+    left: -30px;
+}
+
+.owl-nav .owl-next {
+    right: -30px;
+}
